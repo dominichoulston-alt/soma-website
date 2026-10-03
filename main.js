@@ -108,7 +108,7 @@
   var panelYear = document.getElementById('historyPanelYear');
   var panelTitle = document.getElementById('historyPanelTitle');
   var panelText = document.getElementById('historyPanelText');
-  var stages = [
+  var stages = window.SOMA_HISTORY || [
     {year:'1984', range:'1984–1990', title:'Foundation and Organisational Development', text:'Soma Consultants was established in 1984, focusing on organisational development, leadership effectiveness, team performance and change management. Early work supported organisations across the UK, helping develop the participative and behavioural approaches that remain central to Soma’s methodology today.'},
     {year:'1990', range:'1990–1995', title:'Leadership, Culture and Strategic Change', text:'Expanded support for public and private sector organisations, delivering leadership development, executive coaching, strategy implementation and cultural change programmes. Built a reputation for helping organisations align people, teams and business objectives across complex projects.'},
     {year:'1995', range:'1995–2000', title:'Major Projects and International Expansion', text:'Broadened into major project support, project team development and collaborative working programmes. Extended activities beyond the UK into Europe, North America and Australia, laying the foundations for the international client portfolio that developed from 2000 onwards.'},

@@ -1,0 +1,47 @@
+page_header:
+  eyebrow: "Our Expertise"
+  heading: "Capabilities Shaped Around Your Outcomes"
+  intro: "For over 40 years, Soma has helped organisations improve performance by developing leaders, strengthening teams, enabling organisational change and supporting the successful delivery of major projects across the UK and internationally."
+
+section_head:
+  eyebrow: "Areas of Expertise"
+  heading: "Six capabilities, one connected system."
+  intro: "These capabilities are usually brought together within an engagement rather than delivered as separate products. Select one to see how it works in practice."
+
+panels:
+  - title: "Leadership and Executive Development"
+    challenge: "Leaders stepping into more senior or more complex roles, often during periods of significant change."
+    does: "One-to-one coaching and development shaped around the individual and the organisation around them."
+    outcomes: "Leaders who think strategically, act practically, and lead with confidence in their own style."
+  - title: "Organisational Change and Culture"
+    challenge: "Change that looks right on paper but does not take hold in how people actually work."
+    does: "Working through the transition itself, not just the design of it, so new behaviours and structures stick."
+    outcomes: "Change that survives beyond the programme, with the culture and behaviours to sustain it."
+  - title: "Team Performance and Collaboration"
+    challenge: "Teams that need to work under pressure, across functions or through conflict, without losing trust."
+    does: "Facilitated team development that builds understanding of each person’s contribution and turns friction into productive challenge."
+    outcomes: "Stronger collaboration, clearer roles, and teams that hold together under real delivery pressure."
+  - title: "Major Programme Performance"
+    challenge: "Complex programmes fail when leadership is fragmented and partner organisations work to different priorities."
+    does: "Soma creates the alignment, behaviours and accountability required for teams to deliver as one, from project start-up through to capturing lessons learned at close."
+    outcomes: "Programmes that start well, stay aligned, and carry lessons forward rather than repeating them."
+  - title: "Strategy and Implementation"
+    challenge: "A strategy that is well argued but not yet matched by the capability or commitment needed to deliver it."
+    does: "Working with leadership teams to define direction, then build the capability and commitment to deliver it."
+    outcomes: "A strategy the organisation actually acts on, not one that sits in a document."
+  - title: "Stakeholder Alignment and Facilitation"
+    challenge: "Understanding where an organisation truly stands, and bringing the right people into the room to agree what happens next."
+    does: "We facilitate the conversations that turn insight into agreed action, working directly with the stakeholders who need to be aligned."
+    outcomes: "Clearer priorities, stronger stakeholder alignment, and a shared starting point for change."
+
+testimonial_quote: "“Soma develops people as well as managers, creating confident leaders with the capability to inspire others.”"
+testimonial_cite: "Soma client"
+
+legacy:
+  label: "Soma’s Original Service Framework"
+
+methodology:
+  eyebrow: "Methodology"
+  heading: "Strategy and Implementation"
+  p1: "A key role of business leaders is to identify new opportunities to take the business forward, defining strategy to meet customer needs and market conditions. The bigger challenge is creating the capability to deliver that strategy, and managing the resistance that comes with a strategic shift."
+  p2: "Soma shifts leaders’ focus from operational management, how to get things done, towards a more balanced strategic leadership mindset, combining rigorous analysis with the skill and will required to make strategy a reality."

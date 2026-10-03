@@ -1,0 +1,50 @@
+hero:
+  eyebrow: "Experience Across Sectors"
+  heading_line1: "Experience built in"
+  heading_line2_pre: "complex, "
+  heading_accent1: "regulated"
+  heading_accent2: "environments"
+  intro: "Soma works across complex, regulated and project-led environments where leadership, alignment and reliable delivery are critical, across the sectors and organisational environments below."
+  link: "Explore our sector experience"
+
+sectors:
+  eyebrow: "Sectors"
+  heading: "Depth built across nine complex environments."
+  intro: "Each sector brings its own regulatory, operational and delivery pressures. Soma’s role stays consistent: helping the people and teams inside these programmes align around a common goal and deliver it together."
+  items:
+    - title: "Energy"
+      body: "Large capital investment, complex partner structures and shifting regulatory pressure."
+    - title: "Nuclear"
+      body: "Regulatory oversight, long asset lifecycles and the transfer of expertise as experienced teams retire."
+    - title: "Infrastructure"
+      body: "Complex partner and joint venture structures, with delivery that has to hold together across multiple organisations and long timescales."
+    - title: "Utilities"
+      body: "Large capital investment and long asset lifecycles under sustained regulatory oversight."
+    - title: "Defence"
+      body: "Multiple stakeholders, long procurement cycles and the trust needed to work across organisational boundaries."
+    - title: "Pharmaceuticals"
+      body: "Safety-critical standards and long approval cycles that depend on disciplined, well governed delivery."
+    - title: "Engineering"
+      body: "Multiple disciplines and long procurement cycles that depend on people working to a shared method."
+    - title: "Manufacturing"
+      body: "Coordination across disciplines and safety-critical standards, delivered to a shared plan and method."
+    - title: "Construction"
+      body: "Long procurement cycles and safety-critical standards, delivered across multiple organisations working to one plan."
+  note: "Soma’s wider history also includes work across oil and gas, petrochemicals, technology, public sector organisations, asset management and industrial services."
+
+intl:
+  eyebrow: "International Reach"
+  heading: "Four decades of delivery, worldwide"
+  body: "While maintaining continuous delivery across the United Kingdom for more than four decades, Soma’s experience has grown internationally, combining deep behavioural expertise with practical experience across major projects, organisational transformation and operational excellence."
+  stat1_label: "Continuous UK delivery"
+  stat2_label: "International experience"
+
+evidence:
+  eyebrow: "Evidence"
+  num_label: "Revenue growth over three years"
+  body: "A two year engagement supporting the leadership of an Australian based engineering organisation through an acquisition shows this experience in practice: the kind of integration and organisational change work that runs across many of these sectors, with EBIT maintained above 10%."
+  cta: "Read the case study"
+
+final_cta:
+  heading: "Facing a challenge that does not fit neatly into one sector?"
+  body: "Speak to Soma about the outcomes you need to achieve, whatever industry you work in."

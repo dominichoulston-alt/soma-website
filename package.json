@@ -1,0 +1,12 @@
+{
+  "name": "soma-consultants-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SOMA Consultants static site. Build step merges Decap CMS content files into the HTML templates.",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
