@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: OWNER/REPO
+  repo: dominichoulston-alt/soma-website
   branch: main
 
 publish_mode: simple
@@ -19,130 +19,136 @@ collections:
         label: "Homepage Content"
         file: "content/home.yml"
         fields:
-          - { label: "Hero", name: "hero", widget: "object", fields:
-              - { label: "Lead-in word", name: "lead", widget: "string" }
-              - { label: "Headline line 1", name: "line1", widget: "string" }
-              - { label: "Headline line 2", name: "line2", widget: "string" }
-              - { label: "Headline line 3 (highlighted)", name: "line3", widget: "string" }
-              - { label: "Supporting paragraph", name: "lede", widget: "text" }
-              - { label: "Primary button text", name: "cta_primary", widget: "string" }
-              - { label: "Secondary link text", name: "cta_secondary", widget: "string" }
-            }
-          - { label: "About Intro", name: "intro", widget: "object", fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading (before highlight)", name: "heading_pre", widget: "string" }
-              - { label: "Heading highlighted word", name: "heading_accent", widget: "string" }
-              - { label: "Heading (after highlight)", name: "heading_post", widget: "string" }
-              - { label: "Paragraph 1", name: "p1", widget: "text" }
-              - { label: "Paragraph 2", name: "p2", widget: "text" }
-              - { label: "Link text", name: "cta", widget: "string" }
-              - { label: "Stat 1 label", name: "stat1_label", widget: "string" }
-              - { label: "Stat 2 label", name: "stat2_label", widget: "string" }
-            }
-          - { label: "History", name: "history", widget: "object", fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - label: "Timeline Stages"
-                name: "stages"
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "lead", label: "Lead-in word", widget: "string" }
+              - { name: "line1", label: "Headline line 1", widget: "string" }
+              - { name: "line2", label: "Headline line 2", widget: "string" }
+              - { name: "line3", label: "Headline line 3 (highlighted)", widget: "string" }
+              - { name: "lede", label: "Supporting paragraph", widget: "text" }
+              - { name: "cta_primary", label: "Primary button text", widget: "string" }
+              - { name: "cta_secondary", label: "Secondary link text", widget: "string" }
+          - name: "intro"
+            label: "About Intro"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading_pre", label: "Heading (before highlight)", widget: "string" }
+              - { name: "heading_accent", label: "Heading highlighted word", widget: "string" }
+              - { name: "heading_post", label: "Heading (after highlight)", widget: "string" }
+              - { name: "p1", label: "Paragraph 1", widget: "text" }
+              - { name: "p2", label: "Paragraph 2", widget: "text" }
+              - { name: "cta", label: "Link text", widget: "string" }
+              - { name: "stat1_label", label: "Stat 1 label", widget: "string" }
+              - { name: "stat2_label", label: "Stat 2 label", widget: "string" }
+          - name: "history"
+            label: "History"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "stages"
+                label: "Timeline Stages"
                 widget: "list"
                 min: 8
                 max: 8
                 fields:
-                  - { label: "Start year", name: "year", widget: "string" }
-                  - { label: "Year range", name: "range", widget: "string" }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Text", name: "text", widget: "text" }
-            }
-          - label: "When Clients Engage"
-            name: "engage"
+                  - { name: "year", label: "Start year", widget: "string" }
+                  - { name: "range", label: "Year range", widget: "string" }
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "text", label: "Text", widget: "text" }
+          - name: "engage"
+            label: "When Clients Engage"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-              - label: "Items"
-                name: "items"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - name: "items"
+                label: "Items"
                 widget: "list"
                 min: 4
                 max: 4
                 fields:
-                  - { label: "Heading (before highlight)", name: "heading_pre", widget: "string" }
-                  - { label: "Heading highlighted word", name: "heading_accent", widget: "string" }
-                  - { label: "Body", name: "body", widget: "text" }
-          - label: "Expertise"
-            name: "expertise"
+                  - { name: "heading_pre", label: "Heading (before highlight)", widget: "string" }
+                  - { name: "heading_accent", label: "Heading highlighted word", widget: "string" }
+                  - { name: "body", label: "Body", widget: "text" }
+          - name: "expertise"
+            label: "Expertise"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading (before highlight)", name: "heading_pre", widget: "string" }
-              - { label: "Heading highlighted word", name: "heading_accent", widget: "string" }
-              - { label: "Heading (after highlight)", name: "heading_post", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-              - label: "Capability Panels"
-                name: "panels"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading_pre", label: "Heading (before highlight)", widget: "string" }
+              - { name: "heading_accent", label: "Heading highlighted word", widget: "string" }
+              - { name: "heading_post", label: "Heading (after highlight)", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - name: "panels"
+                label: "Capability Panels"
                 widget: "list"
                 min: 6
                 max: 6
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "The Challenge", name: "challenge", widget: "text" }
-                  - { label: "What Soma Does", name: "does", widget: "text" }
-                  - { label: "The Outcome", name: "outcome", widget: "text" }
-              - { label: "Note", name: "note", widget: "text" }
-              - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
-              - { label: "Testimonial citation", name: "testimonial_cite", widget: "string" }
-          - label: "Featured Case Study"
-            name: "featured_case"
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "challenge", label: "The Challenge", widget: "text" }
+                  - { name: "does", label: "What Soma Does", widget: "text" }
+                  - { name: "outcome", label: "The Outcome", widget: "text" }
+              - { name: "note", label: "Note", widget: "text" }
+              - { name: "testimonial_quote", label: "Testimonial quote", widget: "text" }
+              - { name: "testimonial_cite", label: "Testimonial citation", widget: "string" }
+          - name: "featured_case"
+            label: "Featured Case Study"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-              - { label: "Badge", name: "badge", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Lede 1", name: "lede1", widget: "text" }
-              - { label: "Lede 2", name: "lede2", widget: "text" }
-              - { label: "Big stat label", name: "stat_big_label", widget: "string" }
-              - { label: "Stat 1 label", name: "stat1_label", widget: "string" }
-              - { label: "Stat 2 label", name: "stat2_label", widget: "string" }
-              - { label: "Stat 3 label", name: "stat3_label", widget: "string" }
-              - { label: "Link text", name: "cta", widget: "string" }
-              - { label: "'More from Soma' label", name: "more_label", widget: "string" }
-              - { label: "'More from Soma' link text", name: "more_cta", widget: "string" }
-              - { label: "Reserved case 1 title", name: "reserved1_title", widget: "string" }
-              - { label: "Reserved case 1 body", name: "reserved1_body", widget: "string" }
-              - { label: "Reserved case 2 title", name: "reserved2_title", widget: "string" }
-              - { label: "Reserved case 2 body", name: "reserved2_body", widget: "string" }
-          - label: "What Sets Soma Apart"
-            name: "difference"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "badge", label: "Badge", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "lede1", label: "Lede 1", widget: "text" }
+              - { name: "lede2", label: "Lede 2", widget: "text" }
+              - { name: "stat_big_label", label: "Big stat label", widget: "string" }
+              - { name: "stat1_label", label: "Stat 1 label", widget: "string" }
+              - { name: "stat2_label", label: "Stat 2 label", widget: "string" }
+              - { name: "stat3_label", label: "Stat 3 label", widget: "string" }
+              - { name: "cta", label: "Link text", widget: "string" }
+              - { name: "more_label", label: "'More from Soma' label", widget: "string" }
+              - { name: "more_cta", label: "'More from Soma' link text", widget: "string" }
+              - { name: "reserved1_title", label: "Reserved case 1 title", widget: "string" }
+              - { name: "reserved1_body", label: "Reserved case 1 body", widget: "string" }
+              - { name: "reserved2_title", label: "Reserved case 2 title", widget: "string" }
+              - { name: "reserved2_body", label: "Reserved case 2 body", widget: "string" }
+          - name: "difference"
+            label: "What Sets Soma Apart"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - label: "Stages"
-                name: "stages"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "stages"
+                label: "Stages"
                 widget: "list"
                 min: 4
                 max: 4
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Body", name: "body", widget: "text" }
-              - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
-              - { label: "Testimonial citation", name: "testimonial_cite", widget: "string" }
-          - label: "Testimonial Band"
-            name: "testimonials"
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "body", label: "Body", widget: "text" }
+              - { name: "testimonial_quote", label: "Testimonial quote", widget: "text" }
+              - { name: "testimonial_cite", label: "Testimonial citation", widget: "string" }
+          - name: "testimonials"
+            label: "Testimonial Band"
             widget: "object"
             fields:
-              - { label: "Quote 1", name: "quote1", widget: "text" }
-              - { label: "Citation 1", name: "cite1", widget: "string" }
-              - { label: "Quote 2", name: "quote2", widget: "text" }
-              - { label: "Citation 2", name: "cite2", widget: "string" }
-          - label: "Contact Section"
-            name: "contact"
+              - { name: "quote1", label: "Quote 1", widget: "text" }
+              - { name: "cite1", label: "Citation 1", widget: "string" }
+              - { name: "quote2", label: "Quote 2", widget: "text" }
+              - { name: "cite2", label: "Citation 2", widget: "string" }
+          - name: "contact"
+            label: "Contact Section"
             widget: "object"
             fields:
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Body", name: "body", widget: "text" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "body", label: "Body", widget: "text" }
 
   - name: "services"
     label: "Services Page"
@@ -151,45 +157,45 @@ collections:
         label: "Services Content"
         file: "content/services.yml"
         fields:
-          - label: "Page Header"
-            name: "page_header"
+          - name: "page_header"
+            label: "Page Header"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-          - label: "Section Head"
-            name: "section_head"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+          - name: "section_head"
+            label: "Section Head"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-          - label: "Capability Panels"
-            name: "panels"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+          - name: "panels"
+            label: "Capability Panels"
             widget: "list"
             min: 6
             max: 6
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "The Challenge", name: "challenge", widget: "text" }
-              - { label: "What Soma Does", name: "does", widget: "text" }
-              - { label: "Typical Outcomes", name: "outcomes", widget: "text" }
-          - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
-          - { label: "Testimonial citation", name: "testimonial_cite", widget: "string" }
-          - label: "Legacy Framework"
-            name: "legacy"
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "challenge", label: "The Challenge", widget: "text" }
+              - { name: "does", label: "What Soma Does", widget: "text" }
+              - { name: "outcomes", label: "Typical Outcomes", widget: "text" }
+          - { name: "testimonial_quote", label: "Testimonial quote", widget: "text" }
+          - { name: "testimonial_cite", label: "Testimonial citation", widget: "string" }
+          - name: "legacy"
+            label: "Legacy Framework"
             widget: "object"
             fields:
-              - { label: "Label", name: "label", widget: "string" }
-          - label: "Methodology"
-            name: "methodology"
+              - { name: "label", label: "Label", widget: "string" }
+          - name: "methodology"
+            label: "Methodology"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Paragraph 1", name: "p1", widget: "text" }
-              - { label: "Paragraph 2", name: "p2", widget: "text" }
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "p1", label: "Paragraph 1", widget: "text" }
+              - { name: "p2", label: "Paragraph 2", widget: "text" }
 
   - name: "experience"
     label: "Experience Page"
@@ -198,56 +204,56 @@ collections:
         label: "Experience Content"
         file: "content/experience.yml"
         fields:
-          - label: "Hero"
-            name: "hero"
+          - name: "hero"
+            label: "Hero"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading line 1", name: "heading_line1", widget: "string" }
-              - { label: "Heading line 2 (before highlight)", name: "heading_line2_pre", widget: "string" }
-              - { label: "Heading highlight word 1", name: "heading_accent1", widget: "string" }
-              - { label: "Heading highlight word 2", name: "heading_accent2", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-              - { label: "Scroll link text", name: "link", widget: "string" }
-          - label: "Sectors"
-            name: "sectors"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading_line1", label: "Heading line 1", widget: "string" }
+              - { name: "heading_line2_pre", label: "Heading line 2 (before highlight)", widget: "string" }
+              - { name: "heading_accent1", label: "Heading highlight word 1", widget: "string" }
+              - { name: "heading_accent2", label: "Heading highlight word 2", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "link", label: "Scroll link text", widget: "string" }
+          - name: "sectors"
+            label: "Sectors"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-              - label: "Sector Items"
-                name: "items"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - name: "items"
+                label: "Sector Items"
                 widget: "list"
                 min: 9
                 max: 9
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Body", name: "body", widget: "text" }
-              - { label: "Note", name: "note", widget: "text" }
-          - label: "International Reach"
-            name: "intl"
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "body", label: "Body", widget: "text" }
+              - { name: "note", label: "Note", widget: "text" }
+          - name: "intl"
+            label: "International Reach"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Body", name: "body", widget: "text" }
-              - { label: "Stat 1 label", name: "stat1_label", widget: "string" }
-              - { label: "Stat 2 label", name: "stat2_label", widget: "string" }
-          - label: "Evidence"
-            name: "evidence"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "body", label: "Body", widget: "text" }
+              - { name: "stat1_label", label: "Stat 1 label", widget: "string" }
+              - { name: "stat2_label", label: "Stat 2 label", widget: "string" }
+          - name: "evidence"
+            label: "Evidence"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Stat label", name: "num_label", widget: "string" }
-              - { label: "Body", name: "body", widget: "text" }
-              - { label: "Link text", name: "cta", widget: "string" }
-          - label: "Final Call To Action"
-            name: "final_cta"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "num_label", label: "Stat label", widget: "string" }
+              - { name: "body", label: "Body", widget: "text" }
+              - { name: "cta", label: "Link text", widget: "string" }
+          - name: "final_cta"
+            label: "Final Call To Action"
             widget: "object"
             fields:
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Body", name: "body", widget: "text" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "body", label: "Body", widget: "text" }
 
   - name: "about"
     label: "About / History Page"
@@ -256,61 +262,61 @@ collections:
         label: "About Content"
         file: "content/about.yml"
         fields:
-          - label: "Opener"
-            name: "opener"
+          - name: "opener"
+            label: "Opener"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Paragraph 1", name: "p1", widget: "text" }
-              - { label: "Paragraph 2", name: "p2", widget: "text" }
-              - { label: "Fact 1 label", name: "fact1_label", widget: "string" }
-              - { label: "Fact 2 label", name: "fact2_label", widget: "string" }
-              - { label: "Fact 3 label", name: "fact3_label", widget: "string" }
-          - label: "Overview"
-            name: "overview"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "p1", label: "Paragraph 1", widget: "text" }
+              - { name: "p2", label: "Paragraph 2", widget: "text" }
+              - { name: "fact1_label", label: "Fact 1 label", widget: "string" }
+              - { name: "fact2_label", label: "Fact 2 label", widget: "string" }
+              - { name: "fact3_label", label: "Fact 3 label", widget: "string" }
+          - name: "overview"
+            label: "Overview"
             widget: "object"
             fields:
-              - { label: "Intro", name: "intro", widget: "text" }
-              - { label: "'Where We Work' eyebrow", name: "where_eyebrow", widget: "string" }
-              - { label: "'Where We Work' body", name: "where_body", widget: "text" }
-              - { label: "Testimonial 1 quote", name: "testimonial1_quote", widget: "text" }
-              - { label: "Testimonial 2 quote", name: "testimonial2_quote", widget: "text" }
-              - { label: "Testimonial 3 quote", name: "testimonial3_quote", widget: "text" }
-          - label: "Our Name Story"
-            name: "name_story"
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "where_eyebrow", label: "'Where We Work' eyebrow", widget: "string" }
+              - { name: "where_body", label: "'Where We Work' body", widget: "text" }
+              - { name: "testimonial1_quote", label: "Testimonial 1 quote", widget: "text" }
+              - { name: "testimonial2_quote", label: "Testimonial 2 quote", widget: "text" }
+              - { name: "testimonial3_quote", label: "Testimonial 3 quote", widget: "text" }
+          - name: "name_story"
+            label: "Our Name Story"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Paragraph 1", name: "p1", widget: "text" }
-              - { label: "Paragraph 2", name: "p2", widget: "text" }
-          - label: "Values"
-            name: "values"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "p1", label: "Paragraph 1", widget: "text" }
+              - { name: "p2", label: "Paragraph 2", widget: "text" }
+          - name: "values"
+            label: "Values"
             widget: "list"
             min: 3
             max: 3
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Body", name: "body", widget: "text" }
-          - label: "How We Work"
-            name: "how_we_work"
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "body", label: "Body", widget: "text" }
+          - name: "how_we_work"
+            label: "How We Work"
             widget: "object"
             fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - label: "Items"
-                name: "items"
+              - { name: "label", label: "Label", widget: "string" }
+              - name: "items"
+                label: "Items"
                 widget: "list"
                 min: 6
                 max: 6
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Body", name: "body", widget: "text" }
-          - label: "Heritage"
-            name: "heritage"
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "body", label: "Body", widget: "text" }
+          - name: "heritage"
+            label: "Heritage"
             widget: "object"
             fields:
-              - { label: "Label", name: "label", widget: "string" }
+              - { name: "label", label: "Label", widget: "string" }
 
   - name: "leadership"
     label: "Leadership Page"
@@ -319,21 +325,21 @@ collections:
         label: "Leadership Content"
         file: "content/leadership.yml"
         fields:
-          - label: "Page Header"
-            name: "page_header"
+          - name: "page_header"
+            label: "Page Header"
             widget: "object"
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-          - label: "Leaders"
-            name: "leaders"
+              - { name: "eyebrow", label: "Eyebrow", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+          - name: "leaders"
+            label: "Leaders"
             widget: "list"
             min: 4
             max: 4
             fields:
-              - { label: "Name and role", name: "name", widget: "string" }
-              - { label: "Biography", name: "bio", widget: "text" }
-          - { label: "Note", name: "note", widget: "text" }
-          - { label: "Testimonial quote", name: "testimonial_quote", widget: "text" }
-          - { label: "Testimonial citation", name: "testimonial_cite", widget: "string" }
+              - { name: "name", label: "Name and role", widget: "string" }
+              - { name: "bio", label: "Biography", widget: "text" }
+          - { name: "note", label: "Note", widget: "text" }
+          - { name: "testimonial_quote", label: "Testimonial quote", widget: "text" }
+          - { name: "testimonial_cite", label: "Testimonial citation", widget: "string" }
